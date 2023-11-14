@@ -1,4 +1,4 @@
-d3.csv('/portfolio-1/Bar/data.csv').then(
+d3.csv('Bar/data.csv').then(
     res => {
         let myGraph = document.getElementById('Bar');
 

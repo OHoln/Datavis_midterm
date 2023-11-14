@@ -1,4 +1,4 @@
-d3.csv('/portfolio-1/Line&Scatter/data.csv').then(
+d3.csv('Line&Scatter/data.csv').then(
     res => {
         let myGraph = document.getElementById('LineScatter');
 
