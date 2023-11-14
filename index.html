@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Web Fundamentals Workshop</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#home" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#LineScatter" class="icon solid fa-folder"><span>LineScatter</span></a>
+						<a href="#Pie-Chart" class="icon solid fa-folder"><span>Pie-Chart</span></a>
+						<a href="#Bar" class="icon solid fa-folder"><span>Bar</span></a>
+						<!-- <a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a> -->
+						<!-- <a href="https://twitter.com/ajlkn" class="icon brands fa-twitter"><span>Twitter</span></a> -->
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>111502014 陳宥凱</h1>
+									<p>資料視覺化作業</p>
+								</header>
+								<a href="#LineScatter" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
+									<img src="images/me.jpg" alt="" />
+								</a>
+							</article>
+
+						<!-- Work -->
+							<article id="LineScatter" class="panel">
+								
+								<header>
+									<h2>資料來源</h2>
+								</header>
+								<a href="https://data.gov.tw/dataset/151336"><span>政府資料開放平台-每人每月總薪資</span></a>
+								<header>
+									<h2>製作方法</h2>
+								</header>
+								<p>
+									建立一個trace的陣列，並將產業名稱作為存取各個trace的key，如此便可以在讀資料時透過判斷產業名稱直接將資料塞入trace陣列中，資料中的數值便會依照產業分成好幾個trace。
+								</p>
+								<header>
+									<h2>我的觀察</h2>
+								</header>
+								<p>
+									由這張圖表可以粗略地看出各產業薪資發展的趨勢極其對於整體經濟情況的穩定度，可作為職業選擇的一項考慮因素。例如電力及然氣供應業雖然長期佔據高薪榜首，但明顯已經進入高原期，近20年來薪水都沒有明顯成長，可能不適合長遠的發展。
+									而金融及保險業的薪資成長幅度則一直高於其他產業，但隨經濟狀況的波動也相對明顯等。
+								</p>
+								<section>
+									<div id="LineScatter"></div>
+								</section>
+							</article>
+
+							<article id="Pie-Chart" class="panel">
+								<header>
+									<h2>資料來源</h2>
+								</header>
+								<a href="https://data.gov.tw/dataset/85756"><span>政府資料開放平台-經濟部能源署_台灣地熱發電資訊</span></a>
+								<header>
+									<h2>製作方法</h2>
+								</header>
+								<p>
+									建立三個trace並在讀入資料時對其做該項目所需的運算後放入trace中。
+								</p>
+								<header>
+									<h2>我的觀察</h2>
+								</header>
+								<p>
+									此圖表可用於地熱資源開發的選址，例如光是大屯火山群在全台的地熱發電潛能占比就超過50%，但以開發及規劃的資源卻非常少，我對於這種情況感到詫異，所以上網稍微查了一下，了解到雖然大屯火山群有豐富的地熱資源，但卻部分與陽明山國將公園重疊而無法進行開發，再加上法規與技術(Ex:地下熱水的低PH值對管線的影響)的限制，導致過去礙於開發成本過高而令廠商望之卻步。
+									但近年來隨著技術的提升與政府對再生能源的重視，也讓大屯火山群的地熱能開發看到了希望。以上資訊結合圖表，不難看出大屯火山群是地熱開發最具潛力的地區。
+								</p>
+								<section>
+									<div id="Pie-Chart"></div>
+								</section>
+							</article>
+
+							<article id="Bar" class="panel">
+								<header>
+									<h2>資料來源</h2>
+								</header>
+								<a href="https://data.gov.tw/dataset/132901"><span>政府資料開放平台-臺北市各區人口數按年齡及教育程度分</span></a>
+								<header>
+									<h2>製作方法</h2>
+								</header>
+								<p>
+									建立一個trace陣列，將各區名稱作為存取陣列的key，讀取資料時就將人口數轉為人口占比後與年齡段一起丟入trace中。
+								</p>
+								<header>
+									<h2>我的觀察</h2>
+								</header>
+								<p>
+									此圖表可看出台北市各區人口的年齡分布差異，例如從表中可以發現內湖區的老年(65歲以上)人口明顯低於其他區域，及大安區的老年人口相當高，達到了24%。相信這些數據在政府的政策制定及市場調查時都有顯著的效用。
+								</p>
+								<section>
+									<div id="Bar"></div>
+								</section>
+							</article>
+
+						<!-- Contact -->
+							<article id="contact" class="panel">
+								<header>
+									<h2>Contact Me</h2>
+								</header>
+								<form action="#" method="post">
+									<div>
+										<div class="row">
+											<div class="col-6 col-12-medium">
+												<input type="text" name="name" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-medium">
+												<input type="text" name="email" placeholder="Email" />
+											</div>
+											<div class="col-12">
+												<input type="text" name="subject" placeholder="Subject" />
+											</div>
+											<div class="col-12">
+												<textarea name="message" placeholder="Message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<input type="submit" value="Send Message" />
+											</div>
+										</div>
+									</div>
+								</form>
+							</article>
+
+					</div>
+
+					
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/underscore@1.13.6/underscore-umd-min.js"></script>
+			<script src="//unpkg.com/d3"></script>
+			<script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+			<script src="Line&Scatter/main.js" ></script>
+			<script src="Pie-Chart/main.js" ></script>
+			<script src="Bar/main.js" ></script>
+
+	</body>
+</html>
